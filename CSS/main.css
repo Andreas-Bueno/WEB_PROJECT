@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  font-family: "Oswald", sans-serif;
+}
+@keyframes lineDown {
+  0% {
+    transform: scale(1, 0);
+    transform-origin: top center;
+  }
+  25% {
+    transform: scale(1, 1);
+    transform-origin: top center;
+  }
+  50% {
+    transform: scale(1, 1);
+    transform-origin: top center;
+  }
+  74% {
+    transform: scale(1, 1);
+    transform-origin: top center;
+  }
+  75% {
+    transform: scale(1, 1);
+    transform-origin: bottom center;
+  }
+  100% {
+    transform: scale(1, 0);
+    transform-origin: bottom center;
+  }
+}
+@keyframes arrowDown {
+  0% {
+    bottom: 25px;
+  }
+  30% {
+    bottom: 15px;
+    opacity: 1;
+  }
+  70% {
+    bottom: 10px;
+    opacity: 1;
+  }
+  100% {
+    bottom: 5px;
+    opacity: 0;
+  }
+}
+@media screen and (min-width: 320px) {
+  .ab-page-wrapper {
+    width: 100%;
+    height: 100vh;
+    display: table;
+    background-color: #1c1c1c;
+    border: 30px solid #000;
+  }
+  .ab-topbar {
+    width: 100%;
+    height: 110px;
+    display: block;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  .ab-logo {
+    width: 84px;
+    height: 90px;
+    float: left;
+    margin-left: 60px;
+    background-color: #2ccb69;
+    border-radius: 0 0 42px 0;
+  }
+  .ab-logo img {
+    width: 46px;
+    height: 31px;
+    display: block;
+    margin: 55px auto 0;
+  }
+  .ab-menu {
+    display: none;
+  }
+  .ab-btn-contact {
+    width: 45px;
+    height: 45px;
+    display: block;
+    background-color: #2ccb69;
+    position: fixed;
+    bottom: 45px;
+    right: 45px;
+    border-radius: 45%;
+    z-index: 200;
+    background-image: url("../images/whatsapp.svg");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+  }
+  .ab-btn-contact:hover {
+    -webkit-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+  .ab-btn-contactinfo {
+    width: 255px;
+    height: 165px;
+    padding: 25px;
+    position: fixed;
+    bottom: 115px;
+    z-index: 200;
+    right: 63px;
+    display: none;
+  }
+  .ab-contact-p {
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .ab-contactinfo-inner {
+    display: table;
+    width: 100%;
+    float: right;
+  }
+  .ab-btn-contactinfo p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .ab-corner {
+    width: 25px;
+    height: 25px;
+    display: block;
+    float: right;
+    display: relative;
+  }
+  .ab-corner::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    bottom: -23px;
+    right: 0;
+    background: transparent url("../images/corner.svg") no-repeat center;
+  }
+}
+
+@media screen and (min-width: 540px) {
+}
+@media screen and (min-width: 576px) {
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 980px) {
+  .ab-menu {
+    display: table;
+    float: left;
+    height: 110px;
+    background-color: transparent;
+  }
+  .ab-menu a {
+        font-family:'Fredoka One', cursive;
+        color:#bcbcbc;
+        size: 16px;
+        text-transform: lowercase;
+       text-decoration:none;
+       display:inline-block;
+       margin:50px 20px 0 20px;
+       font-weight: 400;
+       position:relative;
+  }
+  .ab-menu :first-child {
+    padding-left: 0;
+  }
+  .ab-menu a:hover {
+    color: #2ccb69;
+  }
+  .ab-menu a:before {
+            *content:'';
+            width:100%;
+            height: 4px;
+            color: #2ccb69;
+            background-color: #2ccb69;
+            display:block;
+            position:absolute;
+            bottom: -10px;
+            left:0;
+            transition: all 0.2s ease-out;
+            transform:scale(0,1);
+
+            
+  }
+  .ab-menu a:hover::before {
+    transform: scale(1, 1);
+  }
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1364px) {
+}
+@media screen and (min-width: 1600px) {
+}
+/* =============HOME================*/
+.ab-display-text {
+  margin-top: 10%;
+}
+.ab-title-big {
+  font-size: 100px;
+}
+#ab-home-presentation {
+  background-image: url("../images/TuxColoridoOculos.svg");
+  background-repeat: no-repeat;
+  background-position-x: 70%;
+  background-position-y: bottom;
+  position: relative;
+}
+.ab-scroll-down {
+  width: 70px;
+  height: 105px;
+  border-radius: 35px 35px 0 0;
+  background-color: #2ccb69;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.ab-arrow-down {
+  width: 100%;
+  height: 85px;
+  display: table;
+  margin-top: 30px;
+  position: relative;
+}
+.ab-arrow-down img {
+  width: 15px;
+  height: 10px;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  opacity: 0;
+  animation: arrowDown 1s linear 1.2s infinite;
+}
+.ab-arrow-down::before {
+  content: "";
+  width: 2px;
+  height: 45px;
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: black;
+ \ animation: lineDown 1.5s infinite ease-out;
+}
+/* USABLE BUTTONS */
+.ab-btn {
+  display: table;
+  background-color: #2ccb69;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 200px;
+  padding: 0 30px;
+  text-align: center;
+  line-height: 45px;
+  font-weight: 600;
+  color: black;
+  border-radius: 23px;
+  margin: 0 auto;
+}
+
+/* CLASSES REUTILIZAVEIS */
+
+.ab-font-oswald {
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+}
+.ab-title {
+  font-family: "Fredoka One", cursive;
+  font-weight: normal;
+  color: #2ccb69;
+}
+.ab-text-green {
+  color: #2ccb69;
+}
+.ab-text-green-bold {
+  color: #2ccb69;
+  font-weight: bold;
+}
+.ab-text-dark {
+  color: #4d4c4c;
+}
+.ab-text-light {
+  color: #bcbcbc;
+}
+.ab-text-black {
+  color: #000;
+}
+.ab-bg-green {
+  background-color: #2ccb69;
+}
+.ab-bg-dark {
+  background-color: #4d4c4c;
+}
+.ab-bg-light {
+  background-color: #bcbcbc;
+}
+.ab-bg-black {
+  background-color: #000;
+}
+.ab-fullHeight {
+  height: 100vh;
+  border-bottom: 5px solid #2ccb52;
+}
+.ab-firstSection {
+  height: calc(100vh - 30px);
+}
+/* CLASSES de BEHAVIOR */
+.ab-is-open {
+  display: block;
+}
+.ab-change-icon {
+  width: 45px;
+  height: 45px;
+  display: block;
+  background-color: #2ccb69;
+  position: fixed;
+  bottom: 45px;
+  right: 45px;
+  border-radius: 45%;
+  z-index: 200;
+  background-image: url("../images/close.svg");
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+.ab-change-icon ::after {
+  box-shadow: #2ccb52;
+}
