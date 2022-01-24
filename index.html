@@ -15,6 +15,53 @@
 </head>
 
 <body>
+    <div class="ab-overlay  ">
+        <div class="ab-modal ab-bg-black" id='modal-js'>
+            <h1 class="ab-modal-header ab-title ab-text-green ab-toggle-modal">Orçamento</h1>
+            <button class="ab-modal-close ab-toggle-modal">X</button>
+            <div class="ab-modal-body ab-text-light ab" id='modal-js'> 
+                <div class="row"> 
+                    <div class="col-sm-12">
+                            <p>Insira os dados abaixo e entrarei em contato o mais breve </p>
+                            </div>
+                     <div class="row ab-mar-top-15 ab-mar-bot-15 ab-mar-top-15">
+                         <div class="col-sm-12">
+                                    <form class="ab-form">
+                                        <div class="row">
+                                            <div class="col-sm-12 col-md-6 ab-mar-bot-15">
+                                                <label for="nome" class="ab-text-light">Nome</label>
+                                                <input type="text" name="nome" class="ab-field">
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 ab-mar-bot-15">
+                                                <label for="email" class="ab-text-light">Email</label>
+                                                <input type="email" name="email" class="ab-field">
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 ab-mar-bot-15 ">
+                                                <label for="telefone" class="ab-text-light mar-top-15 ">Telefone</label>
+                                                <input type="tel" name="telefone" class="ab-field">
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 ab-mar-bot-15">
+                                                <label for="site" class="ab-text-light mar-top-15 mar-bot-15 ">Site</label>
+                                                <input type="site" name="site" class="ab-field">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                        
+                                            <div class="col-sm-12 col-md-12">
+                                                <button class="ab-btn-green ab-btn-large btn-block ab-mar-top-15">
+                                                    <p>Enviar</p>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                         </div>
+                     </div>
+                    </div>
+                
+                </div>
+        </div>
+    </div>
    <header class="ab-topbar">
        <div class="ab-logo">
         <img src="images/a-B-LOGO.svg"alt="Andreas Bueno"/>
@@ -42,8 +89,9 @@
                 <div class="col-sm-12 col-md-3 offset-md-2 ab-display-text" >
                     <h1 class="ab-title ab-title-big" >Olá</h1>
                 <p class="ab-text-light">Olá, me chamo <span class="ab-text-green-bold ">Andreas Bueno</span>
-                    . Sou um estudante de <span">Analise e Desenvolvimento de Sistemas</span> </p>
-                <div class="ab-btn">Gabigol</div>
+                    . Sou um estudante de <span">Analise e Desenvolvimento de Sistemas.</span> </p>
+                    <p>Esse é o meu primeiro projeto, seja bem-vindo.</p>
+                <button class="ab-btn ab-btn-large ab-btn-green ab-toggle-modal">Solicite um orçamento</button>
                 </div> 
             </div>
         </div>
@@ -54,8 +102,78 @@
         </div>
     </section>
     
-    <section class="ab-fullHeight">Section Two</section>
-    </div>
-    <script src="js/main.js"></script>
+    <section class="ab-fullHeight" id="ab-home-portifolio">
+        <div class="container-fluid ab-no-padding">
+            <div class="row">
+                    <div class="col-sm-2 ab-no-padding">
+                        <div class="ab-portifolio-navigator">
+                            <div class="ab-item-counter">
+                                <span class="ab-text-green">01</span>
+                            </div>
+                            <nav class="ab-item-navigator">
+                                <a href="#" class="ab-item-active" data-nav="1"></a>
+                                <a href="#"data-nav="2"></a>
+                                <a href="#"data-nav="3"></a>
+                                <a href="#"data-nav="4"></a>
+                                <a href="#"data-nav="5"></a>
+                            </nav>
+                            <div class="ab-next-prev">
+                                <div class="item-prev">
+                                    <ion-icon name="arrow-back-outline"></ion-icon>
+                                </div>
+
+                                <div class="ab-counter-numb"> 
+                                        <span class="ab-current-slider">01</span> 
+                                        / 
+                                        <span class="ab-last-slider"></span>
+                                    </div>
+
+                                <div class="item-next">
+                                    <ion-icon name="arrow-forward-outline"></ion-icon>
+                                </div>
+                            </div> 
+                         
+                        </div>
+                    </div>
+
+                    <div class="col-sm-10">
+                        <div class="ab-slider-container ab-fullHeight">
+                            <ul class="ab-slider-list ab-fullHeight">
+                                <li class="ab-slider-item ">
+
+                                </li>
+                                <li class="ab-slider-item ">
+                                
+                                </li>
+                                <li class="ab-slider-item">
+                                
+                                </li>
+
+                                <li class="ab-slider-item ">
+                                
+                                </li>
+                                <li class="ab-slider-item">
+                                
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                
+
+            </div>
+        </div>
+    </section>
+    </div> 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/shortcuts/inview.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"></script>
+    <script src="JAVASCRIPT/anime.min.js"></script>
+    <script src="JAVASCRIPT/slider.js"></script>
+    <script src="JAVASCRIPT/main.js"></script>
+
+        
 </body>
 </html>
